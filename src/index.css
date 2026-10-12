@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --color-primary: 24 20 243;
+  --color-ink: 52 60 106;
+  --color-muted: 113 142 191;
+  --color-surface: 245 247 250;
+  --color-line: 230 239 245;
+  --color-panel: 255 255 255;
+}
+
+:root.dark {
+  color-scheme: dark;
+  --color-primary: 112 130 255;
+  --color-ink: 231 235 255;
+  --color-muted: 160 175 207;
+  --color-surface: 17 22 39;
+  --color-line: 43 52 75;
+  --color-panel: 26 33 54;
+}
+
+body { @apply bg-surface font-sans text-ink antialiased; }
+
+button, a, input, select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: rgb(var(--color-primary) / 0.25);
+}
