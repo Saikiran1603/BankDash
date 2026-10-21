@@ -3,4 +3,5 @@ import type { BankCard } from '../types'
 export const cards: BankCard[] = [
   { id: 1, balance: '$5,756', holder: 'Eddy Cusuma', number: '3778 **** **** 1234', valid: '12/26', variant: 'blue' },
   { id: 2, balance: '$3,200', holder: 'Eddy Suma', number: '4521 **** **** 8890', valid: '09/30', variant: 'light' },
+  { id: 3, balance: '$5,756', holder: 'William', number: '4556 **** **** 7821', valid: '08/28', variant: 'blue' },
 ]
